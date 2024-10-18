@@ -224,11 +224,9 @@ if(location.pathname == "/mealDetails.html"){
    }
  }
  
- getMealCateg();
-
-// if(location.pathname == "/categories.html"){
-   
-// }
+if(location.pathname == "/categories.html"){
+    getMealCateg();
+}
 
 function displayCateg(categArr){
     let cartona = ``;
