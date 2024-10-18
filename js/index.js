@@ -224,9 +224,11 @@ if(location.pathname == "/mealDetails.html"){
    }
  }
  
-if(location.pathname == "/categories.html"){
-    getMealCateg();
-}
+ getMealCateg();
+
+// if(location.pathname == "/categories.html"){
+   
+// }
 
 function displayCateg(categArr){
     let cartona = ``;
@@ -284,7 +286,7 @@ function displaycategMeals(list){
             </div>
             `
     }
-     document.getElementById('rowMealCateg').innerHTML = cartona; 
+    if(document.getElementById('rowMealCateg')) document.getElementById('rowMealCateg').innerHTML = cartona;
 
     let mealCateg = document.querySelectorAll('.mealCateg');
     for(let i=0;i<mealCateg.length;i++){
