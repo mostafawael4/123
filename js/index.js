@@ -144,8 +144,7 @@ function displayMeals(list){
     for(let i=0;i<meals.length;i++){
         meals[i].addEventListener('click',() => {
             localStorage.setItem('mealId',meals[i].getAttribute("id"));
-            // location.href = "../mealDetails.html";
-            location.replace("../mealDetails.html")
+            window.location.replace("../mealDetails.html")
 
         })
         
