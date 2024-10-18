@@ -144,7 +144,7 @@ function displayMeals(list){
     for(let i=0;i<meals.length;i++){
         meals[i].addEventListener('click',() => {
             localStorage.setItem('mealId',meals[i].getAttribute("id"));
-            window.location.replace("../mealDetails.html")
+            location.href = "../mealDetails.html";
 
         })
         
@@ -284,7 +284,7 @@ function displaycategMeals(list){
             </div>
             `
     }
-    if(document.getElementById('rowMealCateg')) document.getElementById('rowMealCateg').innerHTML = cartona;
+     document.getElementById('rowMealCateg').innerHTML = cartona; 
 
     let mealCateg = document.querySelectorAll('.mealCateg');
     for(let i=0;i<mealCateg.length;i++){
