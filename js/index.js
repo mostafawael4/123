@@ -143,8 +143,8 @@ function displayMeals(list){
     let meals = document.querySelectorAll('.meal');
     for(let i=0;i<meals.length;i++){
         meals[i].addEventListener('click',() => {
-            localStorage.setItem('mealId',meals[i].getAttribute("id"));
-            location.href = "../mealDetails.html";
+            localStorage.setItem('mealId',meals[i].id);
+            location.href = "../mealDetails.html,";
 
         })
         
